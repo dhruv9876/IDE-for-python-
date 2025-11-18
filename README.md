@@ -1,4 +1,4 @@
-My Fantastic IDE is a lightweight Python IDE built using Tkinter. It allows users to write, open, edit, save, and run Python files inside a simple graphical interface. The application includes a text editor for writing code and an output console that displays both program output and errors generated while running a script. It uses the subprocess module to execute Python files and capture their output.
+Simple Python IDE is a lightweight Python IDE built using Tkinter. It allows users to write, open, edit, save, and run Python files inside a simple graphical interface. The application includes a text editor for writing code and an output console that displays both program output and errors generated while running a script. It uses the subprocess module to execute Python files and capture their output.
 
 The IDE supports opening existing .py files, saving new files, and running the code directly through the interface. Users can create a script, save it, execute it, and view the results immediately, making it useful for beginners learning Python or anyone who wants a minimal IDE without the complexity of larger tools.
 

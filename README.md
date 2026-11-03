@@ -35,7 +35,6 @@ Prerequisites
 •	Python 3.x installed
 •	Tkinter (included with most Python installations)
 Clone the Repository
-git clone https://github.com/your-username/python-code-editor.git
 Navigate to the Project Directory
 cd python-code-editor
 Run the Application

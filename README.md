@@ -2,15 +2,16 @@ Python Code Editor
 A lightweight desktop-based Python Code Editor built using Python and Tkinter. This application provides a simple and user-friendly environment for writing, editing, saving, and executing Python programs from a single interface.
 The project is designed for beginners, students, and developers who need a minimal code editor without the complexity of larger Integrated Development Environments (IDEs). It allows users to create Python scripts, run them instantly, and view program output or error messages directly within the application.
 ________________________________________
-Features
-•	Create and edit Python files
-•	Open existing .py files
-•	Save and Save As functionality
-•	Execute Python scripts directly from the editor
-•	Built-in output console
-•	Real-time display of program output and errors
-•	Clean and intuitive graphical user interface
-•	Lightweight and beginner-friendly design
+## Features
+- Open, Save, and Save As support
+- Python code execution
+- Integrated output console
+- Syntax highlighting
+- Built-in function highlighting
+- Keyboard shortcuts
+- Error handling
+- Dynamic file tracking
+- Object-oriented architecture
 ________________________________________
 Technologies Used
 •	Python 3

@@ -174,6 +174,26 @@ class PythonIDE:
                 "Save Error",
                 str(e)
             )
+    def get_error_help(self, error_text):
+        suggestions = {
+            "NameError": "A variable or function is being used before it is defined.",
+            "SyntaxError": "Check for missing brackets, colons, quotes, or indentation problems.",
+            "IndentationError": "Check your indentation. Python requires consistent spacing.",
+            "TypeError": "An operation is being performed on an incompatible data type.",
+            "ValueError": "A function received a valid type but an invalid value.",
+            "IndexError": "You are trying to access an index that does not exist.",
+            "KeyError": "The dictionary key you requested was not found.",
+            "ZeroDivisionError": "You cannot divide a number by zero.",
+            "ModuleNotFoundError": "The required module is not installed.",
+            "FileNotFoundError": "The specified file could not be found.",
+            "AttributeError": "The object does not contain the requested attribute or method.",
+        }
+
+        for error_type, message in suggestions.items():
+            if error_type in error_text:
+                return f"\n\nSuggestion:\n{message}"
+
+        return "\n\nSuggestion:\nNo specific help available."
 
     def run_code(self):
         if not self.file_path:
@@ -205,10 +225,15 @@ class PythonIDE:
                 )
 
             if error:
-                self.output.insert(
-                    tk.END,
-                    error
-                )
+               self.output.insert(
+                   tk.END,
+                   error
+            )
+
+            self.output.insert(
+                tk.END,
+                self.get_error_help(error)
+            )
 
         except Exception as e:
             messagebox.showerror(
